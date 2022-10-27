@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contenedor_principal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!--            texto del titulo de la noticia -->
+            <TextView
+                android:id="@+id/texto_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <!--          texto de la  fuente de la noticia -->
+            <TextView
+                android:id="@+id/texto_fuente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen_titulo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_imagen">
+
+        </ImageView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
