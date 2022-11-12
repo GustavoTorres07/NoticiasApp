@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content">
             </TextView>
             <Button
-                android:id="@+id/btn_link"
+                android:id="@+id/btn_url"
                 android:text="Ir a Noticia"
                 android:textSize="12sp"
                 android:padding="6dp"

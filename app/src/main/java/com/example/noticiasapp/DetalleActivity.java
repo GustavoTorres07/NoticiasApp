@@ -22,7 +22,7 @@ public class DetalleActivity extends AppCompatActivity {
     TitulosNoticias titulos;
     TextView txt_titulo, txt_author, txt_hora, txt_detalle, txt_contenido;
     ImageView img_notcias;
-    Button btn_link;
+    Button btn_url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class DetalleActivity extends AppCompatActivity {
         txt_contenido = findViewById(R.id.texto_detalle_contenido);
         img_notcias = findViewById(R.id.img_detalle_noticias);
 
-        // intent para ir a una noticia
-        btn_link = findViewById(R.id.btn_link);
-        btn_link.setOnClickListener(new View.OnClickListener() {
+        // intent para ir a una noticia mediante la url
+        btn_url = findViewById(R.id.btn_url);
+        btn_url.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse(titulos.getUrl());
