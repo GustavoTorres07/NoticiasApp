@@ -7,6 +7,8 @@ public class NoticiasApiRespuesta implements Serializable {
 
     String status = "";
     int totalResults;
+    // creo una lista de articulos y el tipo de la lista es el objeto TitulosNoticias //
+    // (lo llamo articles porque asi esta definido en la api) //
     List<TitulosNoticias> articles;
 
     public String getStatus() {
@@ -24,6 +26,7 @@ public class NoticiasApiRespuesta implements Serializable {
     public void setTotalResults(int totalResults) {
         this.totalResults = totalResults;
     }
+
 
     public List<TitulosNoticias> getArticles() {
         return articles;

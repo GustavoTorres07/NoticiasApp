@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <!-- scroll horizontal barra -->
     <HorizontalScrollView
         android:layout_margin="6dp"
         android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <!-- botones de categorias -->
             <Button
                 android:id="@+id/btn_1"
                 android:text="business"
@@ -79,13 +81,12 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <!-- recyclerview -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_main"
-        android:layout_margin="8dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 

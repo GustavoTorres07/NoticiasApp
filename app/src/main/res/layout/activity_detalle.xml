@@ -73,11 +73,21 @@
             <TextView
                 android:id="@+id/texto_detalle_contenido"
                 android:textSize="20sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </TextView>
+            <Button
+                android:id="@+id/btn_link"
+                android:text="Ir a Noticia"
+                android:textSize="12sp"
+                android:padding="6dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="bottom|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
